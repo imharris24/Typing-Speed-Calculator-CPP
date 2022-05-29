@@ -1,0 +1,3 @@
+D:/MyRepository/GitHub/Typing-Speed-Calculator-CPP/cmake-build-debug/CMakeFiles/Typing_Speed_Calculator_CPP.dir
+D:/MyRepository/GitHub/Typing-Speed-Calculator-CPP/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/MyRepository/GitHub/Typing-Speed-Calculator-CPP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
