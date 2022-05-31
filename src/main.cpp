@@ -4,7 +4,7 @@
 using namespace std;
 
 class TypingSpeedCalculator {
-public:
+private:
     string Paragraph;
     string TypedParagraph;
     chrono::steady_clock::time_point StartingTime;
@@ -17,7 +17,7 @@ public:
     void CalculateTypingSpeed();
     void DisplayParagraph();
     void GetTypedParagraph();
-
+public:
     TypingSpeedCalculator();
     void Run();
 };
