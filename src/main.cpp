@@ -44,6 +44,9 @@ void TypingSpeedCalculator::GetTimeTaken() {
 }
 void TypingSpeedCalculator::CalculateTypingSpeed() {
     TimeTaken = TimeTaken / 60;
+    if (TimeTaken == 0) {
+        TimeTake = 1;
+    }
     TypingSpeed = (TypedParagraph.length()/5) / TimeTaken;
 }
 void TypingSpeedCalculator::Run() {
