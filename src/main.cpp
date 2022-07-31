@@ -60,11 +60,22 @@ void TypingSpeedCalculator::Run() {
     cout << "\nTyping Speed (WPM) = " << TypingSpeed << "\n";
 }
 
+void clearScreen()
+{
+#if defined _WIN32
+    system("cls");
+#elif defined (__LINUX__) || defined(__gnu_linux__) || defined(__linux__)
+    system("clear");
+#elif defined (__APPLE__)
+    system("clear");
+#endif
+}
+
 int main() {
     TypingSpeedCalculator Calc;
     char Option = '\0';
     while (true) {
-        system("cls");
+        clearScreen();
         cout << "Typing Speed Calculator\n";
         cout << "1. Calculate Typing Speed\n";
         cout << "2. Exit\n";
@@ -75,7 +86,7 @@ int main() {
             case '1':
                 Calc.Run();
                 cout << "\n";
-                system("pause");
+                cin.get();
                 break;
             case '2':
                 exit(-1);
